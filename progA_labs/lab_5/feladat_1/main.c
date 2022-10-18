@@ -3,6 +3,59 @@
 #include <stdlib.h>
 #include <time.h>
 
+void f1()
+{
+    int n, a[20], p=-1;
+    scanf("%i", &n);
+    printf("n= %d\n", n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%i", &a[i]);
+    }
+
+    for (int i=0; i<n; i++)
+    {
+        if (a[i]>=0)
+        {
+            p = i;
+            break;
+        }
+    }
+
+    if (p== -1)
+    {
+    printf("Nincs pozitiv");
+    }
+    else
+    {
+        printf("%d pozicioban talalhato az elso pozitiv szam", p);
+    }
+}
+
+void f2() {
+    int n, a[20];
+
+    scanf("%i", &n);
+    printf("n= %i\n", n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%i", &a[i]);
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%i ", a[i]);
+    }
+    printf("\n");
+
+    for (int i=0; i<n-1;i++)
+    {
+        float atlag = (float)(a[i]+a[i+1]/2.0);
+        printf("%f ", atlag);
+    }
+}
 void f6()
 {
     int original[20], n, newArray[20],a,b,j=0;
@@ -200,10 +253,12 @@ void f20(int n, int m)
 
 int main() {
     //f15(7);
-    f17(7);
+    //f17(7);
     //f20(5,3);
     //f10(9);
     //f16(7);
     //f6();
+    //f1();
+    f2();
     return 0;
 }

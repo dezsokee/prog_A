@@ -10,6 +10,7 @@ int main() {
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
+        a[i]=i;
         printf("%d ", a[i]);
     }
     printf("\n");
@@ -34,5 +35,7 @@ int main() {
     }
 
     freopen ("CON", "r", stdin);
+
+    printf("\nA cserek szama: %d\n", db);
     return 0;
 }
