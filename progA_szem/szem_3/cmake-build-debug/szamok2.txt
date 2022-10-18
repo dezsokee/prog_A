@@ -1,0 +1,7 @@
+5, ot
+6, hat
+4, negy
+7, het
+8, nyolc
+2, ketto
+0, nulla

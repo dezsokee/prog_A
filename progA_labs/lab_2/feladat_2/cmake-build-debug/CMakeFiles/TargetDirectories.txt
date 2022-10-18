@@ -1,0 +1,3 @@
+C:/Users/palma/Documents/GitHub/2022-2023/Prog1_labs/lab_2/feladat_2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/palma/Documents/GitHub/2022-2023/Prog1_labs/lab_2/feladat_2/cmake-build-debug/CMakeFiles/feladat_2.dir
+C:/Users/palma/Documents/GitHub/2022-2023/Prog1_labs/lab_2/feladat_2/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -1,0 +1,6 @@
+A binaris vagy linearis kereses a hatekonyabb?
+Hogyan deklaraljuk a valos tipusu valtozokat?
+Hogyan iratjuk ki for ciklussal a szamokat n-tol 0-ig?
+A double vagy a float tipus nagyobb?
+Hogyan iratunk ki allomanyba?
+Mikor hasznaljuk a while ciklust?
