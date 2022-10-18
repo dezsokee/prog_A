@@ -36,13 +36,18 @@ void f1()
 void f2() {
     int n, a[20];
 
+    freopen("szamok.txt", "r", stdin);
+
     scanf("%i", &n);
+
     printf("n= %i\n", n);
 
     for (int i = 0; i < n; i++)
     {
         scanf("%i", &a[i]);
     }
+
+    freopen("CON", "r", stdin);
 
     for (int i = 0; i < n; i++)
     {
@@ -52,10 +57,127 @@ void f2() {
 
     for (int i=0; i<n-1;i++)
     {
-        float atlag = (float)(a[i]+a[i+1]/2.0);
-        printf("%f ", atlag);
+        float atlag = (float)((a[i]+a[i+1])/2.0);
+        printf("%.2f ", atlag);
     }
 }
+
+void f3()
+{
+    int n, a[20];
+    freopen("szamok.txt", "r", stdin);
+
+    scanf("%i", &n);
+    printf("n= %i \n", n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%i", &a[i]);
+        printf("%i ", a[i]);
+    }
+    printf("\n");
+
+    for (int i = 1; i < n; i++)
+    {
+        printf("%i ", a[i]-a[i-1]);
+    }
+
+    freopen("CON", "r", stdin);
+}
+
+void f4()
+{
+    int n, a[20], b[20], q=0;
+    freopen("szamok.txt", "r", stdin);
+
+    scanf("%i", &n);
+    printf("n= %i \n", n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%i", &a[i]);
+        printf("%i ", a[i]);
+        int k = 0;
+
+        for (int j=2; j <= (a[i]/2); j++)
+        {
+            if (j*j == a[i])
+            {
+                k ++;
+            }
+        }
+
+        if (k != 0)
+        {
+            b[q] = a[i];
+            q++;
+        }
+    }
+
+    printf("\n");
+
+    for (int i = 0; i < q; i++)
+    {
+        printf("%i ", b[i]);
+    }
+
+    freopen("CON", "r", stdin);
+}
+
+void f5()
+{
+    int n, a[20], b[20], q=0, ossz = 0, c[20], r = 0;
+    freopen("szamok.txt", "r", stdin);
+
+    scanf("%i", &n);
+    printf("n= %i \n", n);
+
+    for (int i = 0; i < n; i++)
+    {
+        scanf("%i", &a[i]);
+        printf("%i ", a[i]);
+        int k = 0;
+
+        for (int j=2; j <= (a[i]/2); j++)
+        {
+            if (j*j == a[i])
+            {
+                k ++;
+                c[r]= i;
+                r++;
+            }
+        }
+
+        if (k != 0)
+        {
+            b[q] = a[i];
+            ossz+=a[i];
+            q++;
+        }
+    }
+
+    printf("\n");
+    printf("%i db negyzetszam van", q);
+    printf("\n");
+    printf("%i a negyzetszamok osszege", ossz);
+    printf("\n");
+
+    for (int i = 0; i < q; i++)
+    {
+        printf("%i ", b[i]);
+    }
+
+    printf("\n");
+    printf("Poziciojuk:\n");
+
+    for (int i=0; i<r; i++)
+    {
+        printf("%i ", c[i]);
+    }
+
+    freopen("CON", "r", stdin);
+}
+
 void f6()
 {
     int original[20], n, newArray[20],a,b,j=0;
@@ -259,6 +381,9 @@ int main() {
     //f16(7);
     //f6();
     //f1();
-    f2();
+    //f2();
+    //f3();
+    //f4();
+    f5();
     return 0;
 }
