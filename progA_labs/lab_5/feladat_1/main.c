@@ -204,6 +204,120 @@ void f6()
     }
 }
 
+void f7()
+{
+    int original[20], n, newArray[20],a,b,j=0;
+    printf("Enter the size of array: ");
+    scanf("%i", &n);
+
+    printf("Give the numbers:\n");
+    for (int i=0; i<n; ++i)
+    {
+        scanf("%i", &original[i]);
+    }
+
+    printf("a, b =\n");
+    scanf("%i", &a);
+    scanf("%i", &b);
+
+    for (int i=n-1; i>=0; --i)
+    {
+        if (original[i] >=a && original[i] <= b)
+        {
+            newArray[j]=original[i];
+            j++;
+        }
+    }
+
+    for (int i=0; i<j; ++i)
+    {
+        printf("%d ", newArray[i]);
+    }
+}
+
+void f8()
+{
+    int a[20],n;
+    freopen("szamok.txt", "r", stdin);
+
+    scanf("%i", &n);
+
+    for (int i=0; i<n; i++)
+    {
+        scanf("%i", &a[i]);
+    }
+
+    int max, min,p=0,q=0;
+
+    for (int i=0; i<n; i++)
+    {
+        if (a[i] >= 0) {
+            printf("%d ", a[i]);
+            if (q==0)
+            {
+                min = a[i];
+                q=1;
+            }
+            else if (a[i]< min)
+            {
+                min = a[i];
+            }
+        }
+    }
+
+    for (int i = 0; i < n; ++i) {
+        if (a[i] < 0)
+        {
+            printf("%d ", a[i]);
+            if (p==0)
+            {
+                max = a[i];
+                p=1;
+            }
+            else if (a[i] > max)
+            {
+                max = a[i];
+            }
+        }
+    }
+
+    printf("\n");
+    printf("A legkisebb pozitiv szam: %i es a legnagyobb negativ szam: %i\n", min, max);
+
+    freopen("CON", "r", stdin);
+}
+
+void f9() {
+    int a[20], n;
+    freopen("szamok.txt", "r", stdin);
+
+    scanf("%i", &n);
+
+    for (int i = 0; i < n; i++) {
+        scanf("%i", &a[i]);
+    }
+
+    int j = a[n - 1], k;
+    int e = j >=0 ? 1 : 0;
+
+    for (int i = 0; i <n ; ++i) {
+        if (a[i] >=0 )
+        {
+            k=1;
+        }
+        else
+        {
+            k=0;
+        }
+        if (k==e)
+        {
+            printf("%d ", i);
+        }
+    }
+
+    freopen("CON", "r", stdin);
+}
+
 void f10(int n)
 {
     srand((unsigned int)time(NULL));
@@ -233,6 +347,41 @@ void f10(int n)
     for (int i = 0; i < n; ++i) {
         printf("%d ", b[i]);
     }
+}
+
+void f10_1()
+{
+    int a[20],n;
+    freopen("szamok.txt", "r", stdin);
+
+    scanf("%i", &n);
+
+    for (int i = 0; i < n; ++i) {
+        scanf("%i", &a[i]);
+    }
+
+    int min = a[0], max = a[0];
+
+    for (int i = 0; i < n; ++i) {
+        if (a[i] < min) {
+            min = a[i];
+        }
+        if (a[i] > max) {
+            max = a[i];
+        }
+    }
+
+    int lkkt=min;
+
+    for (int i = 0; i < n; ++i) {
+        while (lkkt % a[i] != 0)
+        {
+            lkkt+=a[i];
+        }
+    }
+
+    printf("%d\n", lkkt);
+
 }
 
 void f15(int n)
@@ -384,6 +533,11 @@ int main() {
     //f2();
     //f3();
     //f4();
-    f5();
+    //f5();
+    //f7();
+    //f8();
+    //f9();
+    f10_1();
+
     return 0;
 }
