@@ -1,0 +1,3 @@
+C:/Users/Szabi/Desktop/Egyetem/prog_A/progA_szem/szeminarium_6_1/cmake-build-debug/CMakeFiles/szeminarium_6_1.dir
+C:/Users/Szabi/Desktop/Egyetem/prog_A/progA_szem/szeminarium_6_1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Szabi/Desktop/Egyetem/prog_A/progA_szem/szeminarium_6_1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
