@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/palma/Documents/GitHub/2022-2023/Prog1_labs/lab_6/feladat_1
+# Install script for directory: C:/Users/Szabi/Desktop/Egyetem/prog_A/progA_labs/lab_6/feladat_1
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Coding/MinGW/bin/objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2022.2.3/bin/mingw/bin/objdump.exe")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/palma/Documents/GitHub/2022-2023/Prog1_labs/lab_6/feladat_1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Szabi/Desktop/Egyetem/prog_A/progA_labs/lab_6/feladat_1/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
